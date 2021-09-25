@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    
    
 }
 .cardTop {
@@ -86,7 +86,7 @@
     position: relative;
     width: 641.26px;
     height: 260px;
-    top: 325px;
+    top: 300px;
 }
 .range input{
     -webkit-appearance: none;
@@ -97,7 +97,26 @@
     background: linear-gradient(97.18deg, #FA94FC -40.71%, #86BDFE 134.95%);
     border-radius: 5px;
 }
-.range ::-moz-range-thumb {
+.range input::-moz-range-thumb {
+  
+   -moz-appearance:    none;
+  
+    width: 45.42px;
+    height: 32px;
+    border-radius: 27px;
+    background-image: url("./slider.svg");
+    border: solid 4px white;
+    cursor: pointer;
+    background-position:center;
+    background: cover;
+    padding: 0;
+    
+  }
+.range input::-webkit-slider-thumb {
+  
+  -webkit-appearance: none;
+  appearance: none;
+  
     width: 45.42px;
     height: 32px;
     border-radius: 27px;
