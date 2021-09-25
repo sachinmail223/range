@@ -1,0 +1,165 @@
+.progressCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+   
+}
+.cardTop {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-top:  0.5rem;
+}
+.firstChild {
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  border: solid 9px transparent;
+  border-top: solid 9px #775ef0;
+  border-right: solid 9px #775ef0;
+  position: relative;
+}
+
+.firstChild span {
+  height: 57px;
+  width: 57px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 4px #eaeaea;
+  z-index: -10;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.secondChild span{
+  font-size: 24px;
+  font-weight: 600;
+}
+.secondChild p{
+    
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333 ;
+  visibility: .71;
+}
+
+.heading{
+    max-width: 1025px;
+    height: 64;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 148;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    text-align: center;
+    /* margin-top: 5rem; */
+    position: absolute;
+    top: 148px;
+}
+
+
+.heading2{
+    max-width: 862px;
+    height: 96px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 48px;
+    /* margin-top: 3rem; */
+    position: absolute;
+    top: 222px;
+}
+
+.range{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 641.26px;
+    height: 260px;
+    top: 325px;
+}
+.range input{
+    -webkit-appearance: none;
+    position: absolute;
+    width: 597px;
+    height: 9px;
+    bottom: 0px;
+    background: linear-gradient(97.18deg, #FA94FC -40.71%, #86BDFE 134.95%);
+    border-radius: 5px;
+}
+.range ::-moz-range-thumb {
+    width: 45.42px;
+    height: 32px;
+    border-radius: 27px;
+    background-image: url("./slider.svg");
+    border: solid 4px white;
+    cursor: pointer;
+    background-position:center;
+    background: cover;
+    padding: 0;
+    
+  }
+  .background{
+   position: absolute;
+   bottom: 0PX;
+   right: 0px;
+   z-index: -100;
+}
+
+.humanRight{
+    position: absolute;
+    bottom: 25px;
+    right: -05px;
+    height: 100%;
+}
+.humanLeft{
+    position: absolute;
+    bottom: 25px;
+    left: -05px;
+    height: 100%;
+}
+
+.center{
+    
+    position: absolute;
+    z-index: -99;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 280px;
+}
+
+.range p{
+position: absolute;
+bottom: -40px;
+font-weight: 400;
+line-height: 24px;
+font-size: 14px;
+}
+
+.buttonDiv button{
+  border: none;
+background: transparent;
+margin: 20px;
+
+ 
+}
+
+.buttonDiv{
+  position: absolute;
+  top: 754px;
+}
+
+
+
