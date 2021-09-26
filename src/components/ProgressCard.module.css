@@ -157,7 +157,7 @@
     height: 280px;
 }
 
-.range p{
+.sliderHeading{
 position: absolute;
 bottom: -40px;
 font-weight: 400;
@@ -169,6 +169,7 @@ font-size: 14px;
   border: none;
 background: transparent;
 margin: 20px;
+margin-bottom: 0;
 
  
 }
@@ -243,8 +244,12 @@ margin: 20px;
 
 }
 
-@media only screen and (max-width: 414px) {
-  /* For tablets: */
+@media only screen and (min-width: 319px) {
+  /* For mobile: */
+  .cardTop {
+    margin-top: 1rem;
+   
+  }
   .heading{
     max-width: 300px;
     font-size: 12px;
@@ -275,7 +280,11 @@ margin: 20px;
   width: 270px;
 }
 
-
+.sliderHeading{
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 12px;
+  }
 }
 
 
