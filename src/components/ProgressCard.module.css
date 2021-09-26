@@ -184,7 +184,7 @@ margin-bottom: 0;
 
 /* for responsiv */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1040px) {
   /* For tablets: */
   .heading{
     max-width: 650px;
@@ -201,6 +201,33 @@ margin-bottom: 0;
 .background{
  width: 100vw;
   
+}
+
+ 
+}
+@media only screen and (max-width: 730px) {
+  /* For tablets: */
+  .heading{
+    max-width: 500px;
+    margin-top: 148;
+    font-size: 17px;
+    line-height: 27px;
+}
+.heading2{
+    max-width: 540px;
+    font-size: 25px;
+    line-height: 40px;
+    top: 300px;
+}
+.background{
+ width: 100vw;
+  
+}
+.input{
+  width: 500px;
+}
+.range{
+  width: 500px;
 }
 
  
@@ -244,7 +271,7 @@ margin-bottom: 0;
 
 }
 
-@media only screen and (min-width: 319px) {
+@media only screen and (max-width: 450px) {
   /* For mobile: */
   .cardTop {
     margin-top: 1rem;
