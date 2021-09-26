@@ -3,9 +3,8 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 100vh;
-    
-   
+    height: 100vh; 
+    width: 100vw;
 }
 .cardTop {
   display: flex;
@@ -88,7 +87,7 @@
     height: 260px;
     top: 300px;
 }
-.range input{
+.input{
     -webkit-appearance: none;
     position: absolute;
     width: 597px;
@@ -97,7 +96,7 @@
     background: linear-gradient(97.18deg, #FA94FC -40.71%, #86BDFE 134.95%);
     border-radius: 5px;
 }
-.range input::-moz-range-thumb {
+.input::-moz-range-thumb {
   
    -moz-appearance:    none;
   
@@ -112,7 +111,7 @@
     padding: 0;
     
   }
-.range input::-webkit-slider-thumb {
+.input::-webkit-slider-thumb {
   
   -webkit-appearance: none;
   appearance: none;
@@ -133,19 +132,18 @@
    bottom: 0PX;
    right: 0px;
    z-index: -100;
+   
 }
 
 .humanRight{
     position: absolute;
     bottom: 25px;
     right: -05px;
-    height: 100%;
 }
 .humanLeft{
     position: absolute;
     bottom: 25px;
     left: -05px;
-    height: 100%;
 }
 
 .center{
@@ -178,6 +176,106 @@ margin: 20px;
 .buttonDiv{
   position: absolute;
   top: 754px;
+}
+
+
+
+
+/* for responsiv */
+
+@media only screen and (max-width: 768px) {
+  /* For tablets: */
+  .heading{
+    max-width: 650px;
+    margin-top: 148;
+    font-size: 20px;
+    line-height: 27px;
+}
+.heading2{
+    max-width: 700px;
+    font-size: 30px;
+    line-height: 40px;
+    top: 300px;
+}
+.background{
+ width: 100vw;
+  
+}
+
+ 
+}
+
+@media only screen and (max-height: 768px) {
+  /* For tablets: */
+  .heading{
+    max-width: 650px;
+    margin-top: 100;
+    font-size: 17px;
+    line-height: 25px;
+    top: 105px;
+}
+.heading2{
+    max-width: 1000px;
+    font-size: 22px;
+    line-height: 30px;
+    top: 195px;
+}
+.background{
+ width: 100vw;
+  
+}
+.range{
+  height: 260px;
+  top: 105px;
+}
+
+.buttonDiv{
+  position: absolute;
+  top: 550px;
+}
+.cardTop {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding-top:  0.5rem;
+
+}
+
+}
+
+@media only screen and (max-width: 414px) {
+  /* For tablets: */
+  .heading{
+    max-width: 300px;
+    font-size: 12px;
+    line-height: 17px;
+    top: 130px;
+}
+.heading2{
+    max-width: 320px;
+    font-size: 17px;
+    line-height: 25px;
+    top: 220px;
+}
+.background{
+ width: 100vw;
+  
+}
+.range{
+  max-width: 300px;
+  top: 130px;
+}
+
+.buttonDiv{
+  position: absolute;
+  top: 550px;
+}
+
+.input{
+  width: 270px;
+}
+
+
 }
 
 

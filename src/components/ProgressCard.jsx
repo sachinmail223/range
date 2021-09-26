@@ -3,12 +3,12 @@ import styles from './ProgressCard.module.css'
 
 const ProgressCard = () => {
 
-    const [sizeRight, setSizeRight] = useState(62.5)
-    const [sizeLeft, setSizeLeft] = useState(125-62.5)
+    const [sizeRight, setSizeRight] = useState(45)
+    const [sizeLeft, setSizeLeft] = useState(90-45)
 
     const changeSize = (e)=>{
         setSizeRight(e.target.value)
-        setSizeLeft(125-e.target.value)
+        setSizeLeft(90-e.target.value)
     }
     return (
         <div className={styles.progressCard}>
@@ -32,7 +32,7 @@ const ProgressCard = () => {
             <div className={styles.range}>
             <img className={styles.humanRight}  style={{height: `${sizeRight}%`}} src="./img/human.svg" alt="Vector" />
             <img className={styles.humanLeft} style={{height: `${sizeLeft}%`}} src="./img/human.svg" alt="Vector" />
-            <input type="range" min="25" max="100" onChange={changeSize} value={sizeRight}/>
+            <input className={styles.input} type="range" min="20" max="70" onChange={changeSize} value={sizeRight}/>
             <p className={styles.sliderHeading}>Move the slider to indicate your opinion</p>
             </div>
 

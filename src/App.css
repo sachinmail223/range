@@ -29,6 +29,11 @@ ul {
 body {
  
   font-family: 'Inter', sans-serif;
-  
-  
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.App{
+  width: 100vw;
+
 }
