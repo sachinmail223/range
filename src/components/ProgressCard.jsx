@@ -3,13 +3,11 @@ import styles from './ProgressCard.module.css'
 
 const ProgressCard = () => {
 
-    const [sizeRight, setSizeRight] = useState(45)
-    const [sizeLeft, setSizeLeft] = useState(90-45)
+    const [size, setSize] = useState(45)
 
     const changeSize = (e)=>{
-        setSizeRight(e.target.value)
-        setSizeLeft(90-e.target.value)
-    }
+        setSize(e.target.value)
+         }
     return (
         <div className={styles.progressCard}>
             <img className={styles.center} src="./img/center.svg" alt="center" />
@@ -30,16 +28,16 @@ const ProgressCard = () => {
 
 {/* slider div  */}
             <div className={styles.range}>
-            <img className={styles.humanRight}  style={{height: `${sizeRight}%`}} src="./img/human.svg" alt="Vector" />
-            <img className={styles.humanLeft} style={{height: `${sizeLeft}%`}} src="./img/human.svg" alt="Vector" />
-            <input className={styles.input} type="range" min="20" max="70" onChange={changeSize} value={sizeRight}/>
+            <img className={styles.humanRight}  style={{height: `${size}%`}} src="./img/human.svg" alt="Vector" />
+            <img className={styles.humanLeft} style={{height: `${90-size}%`}} src="./img/human.svg" alt="Vector" />
+            <input className={styles.input} type="range" min="20" max="70" onChange={changeSize} value={size}/>
             <p className={styles.sliderHeading}>Move the slider to indicate your opinion</p>
             </div>
 
 {/* bottom background */}
             <img className={styles.background} src="./img/background.svg" alt="Vector" />
 
-{/* buttons in buttom */}
+{/* buttons in bottom */}
 
             <div className={styles.buttonDiv}>
                
